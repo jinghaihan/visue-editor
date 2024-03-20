@@ -1,0 +1,3 @@
+export const APP_THEME_ALGO_KEY = '__APP_THEME_ALGO_KEY__'
+
+export const APP_COMPACT_MODE_KEY = '__APP_COMPACT_MODE_KEY__'

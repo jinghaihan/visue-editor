@@ -1,0 +1,42 @@
+@prefix-cls: ~'@{namespace}-editor';
+
+.light {
+  color: #333;
+  .@{prefix-cls}-header {
+    background-color: #fff !important;
+  }
+  .@{prefix-cls}-sider {
+    :deep(.@{ant-prefix}-layout-sider-trigger) {
+      border-top: 1px solid rgba(5, 5, 5, 0.06);
+    }
+  }
+}
+.dark {
+  color: #fff;
+  .@{prefix-cls}-header {
+    background-color: @background-darker-color !important;
+  }
+  .@{prefix-cls}-sider,
+  .@{prefix-cls}-config-sider {
+    background-color: @background-color;
+  }
+  .@{prefix-cls}-sider {
+    :deep(.@{prefix-cls}-action-bar) {
+      background-color: @background-dark-color;
+    }
+    :deep(.@{ant-prefix}-layout-sider-trigger) {
+      background-color: @background-dark-color;
+    }
+  }
+  .@{prefix-cls}-config-sider {
+    :deep(.@{ant-prefix}-layout-sider-zero-width-trigger) {
+      background-color: @background-dark-color;
+    }
+  }
+  .@{prefix-cls}-content {
+    background-color: @background-darker-color;
+  }
+  :deep(.@{ant-prefix}-divider) {
+    border-color: transparent;
+  }
+}
